@@ -21,13 +21,12 @@
 title: Sagar Desai
 email: sagardesaee@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
+  Meet Sagar Desai: A 7.5+ years experienced AI Engineer on a 
+  continuous journey of learning and innovation in Machine Learning and AI.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: jekyllrb
-github_username:  jekyll
+twitter_username: sagarde72469395
+github_username:  SDcodehub
 
 # Build settings
 theme: minima
