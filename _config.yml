@@ -53,7 +53,14 @@ plugins:
 #   - vendor/gems/
 #   - vendor/ruby/
 
+defaults:
+  -
+    scope:
+      path: "_projects"
+    values:
+      layout: "project"
+
 collections:
   projects:
     output: true
-
+    permalink: /projects/:path/
