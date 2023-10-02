@@ -1,0 +1,17 @@
+<!-- _layouts/projects.html -->
+---
+layout: default
+---
+
+<div class="projects">
+  <h1>My Projects</h1>
+  <ul>
+    {% for project in site.projects %}
+      <li>
+        <h2><a href="{{ project.url }}">{{ project.title }}</a></h2>
+        <img src="{{ project.image }}" alt="{{ project.title }}">
+        <p>{{ project.description }}</p>
+      </li>
+    {% endfor %}
+  </ul>
+</div>
