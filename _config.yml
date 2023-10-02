@@ -57,9 +57,3 @@ collections:
   projects:
     output: true
 
-
-layouts:
-  - default
-  - page
-  - post
-
