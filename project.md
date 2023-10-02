@@ -1,7 +1,11 @@
 ---
+---
 layout: page
 title: Projects
 permalink: /projects/
+project_type: project
+---
+
 ---
 
 ## My Projects
