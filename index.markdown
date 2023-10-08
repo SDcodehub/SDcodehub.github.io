@@ -18,9 +18,10 @@ layout: default
     <div>
       <p></p>
       <ul>
-        <a href="https://linkedin.com/in/yourusername">LinkedIN</a> |
-        <a href="https://github.com/yourusername">GitHub</a> |
-        <a href="https://huggingface.co/yourusername">Hugging Face</a> 
+        <a href="https://www.linkedin.com/in/sagar-s-desai/">LinkedIN</a> |
+        <a href="https://github.com/SDcodehub">GitHub</a> |
+        <a href="https://huggingface.co/sagarsdesai">Hugging Face</a> |
+        <a href="https://www.kaggle.com/sagarsdesai" target="_blank">Kaggle</a> 
       </ul>
     </div>
   </div>
