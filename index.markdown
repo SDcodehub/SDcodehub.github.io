@@ -9,6 +9,9 @@ layout: default
   </div>
   <div style="flex: 2; text-align: center;">
     <!-- Add your tagline here with emojis and slant -->
+    <p>I don't know YET, but I'm skilled at finding the answers.</p>
+
+    <!-- Add your tagline here with emojis and slant -->
     <p>🚀 Learn and Experiment with AI technology 🧠</p>
     
     <!-- Add your current interest here -->
