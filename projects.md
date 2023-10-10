@@ -7,6 +7,7 @@ permalink: /projects/
 # Projects
 
 ### Project 1: Agent Language Model Development
+![agent_llm_dev](/assets_files/blogs/projects/agent_llm_dev/llm_agents_15sec.gif)
 
 agent_llm_dev is an evolving framework designed to empower the development of Language Model (LLM) agents. Initially tailored for software development tasks, it boasts post-processing capabilities for conversation outputs. Our vision is to transform this framework into a versatile tool, accommodating various domains, human-in-the-loop interactions, long-term and short-term memory, self-reflection, and additional features like web scraping. Join us in experimenting with cutting-edge agent concepts and contributing to the future of conversational AI.
 
