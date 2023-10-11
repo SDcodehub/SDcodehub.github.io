@@ -17,7 +17,7 @@ agent_llm_dev is an evolving framework designed to empower the development of La
 
 Introducing the Name Generation Application, your go-to tool for creating unique and imaginative names. With character-level language models, it offers two exciting options: the Random Model for playful brainstorming and the Bigram Model, trained on a diverse dataset, for names with structured patterns. Explore the world of creative naming effortlessly!.
 
-[GitHub Repository](https://github.com/SDcodehub/make_more)
+[GitHub Repository](https://github.com/SDcodehub/make_more) | 
 [Hugging Face](https://huggingface.co/spaces/sagarsdesai/make_more)
 
 ### Project 3: Yet Another Project
