@@ -1,3 +1,12 @@
+---
+layout: post
+title: Paper - ATTENTION SINKS
+date: 2023-10-15
+author: Sagar Desai
+categories: [llm-paper]
+tags: [attention, transformer, gpt]
+---
+
 Paper: [EFFICIENT STREAMING LANGUAGE MODELS WITH ATTENTION SINKS](https://arxiv.org/pdf/2309.17453v1.pdf)
 
 ![result table](/assets_files/blogs/2023-10-09-prompbreeder/table_result.png)
