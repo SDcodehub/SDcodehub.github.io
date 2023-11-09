@@ -94,19 +94,23 @@ There are situations where you need to work with different Python versions on th
 
 Enhance your Python development experience in VS Code with these useful extensions:
 
-1. Markdown All in One
-2. Python
-3. Pylance
-4. Gitlens
-5. Pylint
-6. Black formatter
-7. Flake8
-8. Isort (to sort imports)
-9. Mypy (for type hinting)
-10. Error Lens
-11. Darker (for code reformatting)
-12. YAML
-13. Path intellecence 
+		a. Markdown All in One
+		b. Python
+		c. Pylance
+		d. Gitlens
+		e. Pylint
+		f. Black formatter
+		g. Isort - sorts the imports
+		h. Mypy - checks for type hintings
+		i. Error Lens
+		j. YAML
+		k. Path intellecence 
+		l. Even better toml
+	2. Optional
+		a. Flake8
+		b. Darker - apply reformatting with some relaxing/ incremental adoption
+		c. Makefile Tools
+ 
 
 These extensions can significantly improve your code quality and development productivity.
 
@@ -175,6 +179,10 @@ Here are the corrected and cleaner instructions for managing Python packages:
 
 5. Consider optional dependencies, such as linting tools, that do not need to be shipped with your package. For example, tools like Ruff and mypy can be marked as optional dependencies. Install them with `pip install ".[dev]"`.
 
+**Document bash/sh/shell commands**
+- Use Taskfile by adriancooney
+- install build, dev and all to make easy to run file
+
 ---
 
 By following these tips and best practices, you can enhance your Python development workflow, write cleaner code, and manage your projects more efficiently. Stay updated with the latest Python versions, tools, and best practices to be a more effective Python developer.
@@ -189,5 +197,6 @@ For more in-depth information on the topics covered in this blog post, you can e
 - [Creating Virtual Environments](#creating-virtual-environments)
 - [Package Building in Python](#package-building-in-python)
 - [Taking Python to Production: A Professional Onboarding Guide](https://www.udemy.com/course/setting-up-the-linux-terminal-for-software-development)
+- [Taskfile by adriancooney](https://github.com/adriancooney/Taskfile/blob/master/Taskfile.template)
 
 Happy coding!
