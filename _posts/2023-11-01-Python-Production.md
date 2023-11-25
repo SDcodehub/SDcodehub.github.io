@@ -8,6 +8,10 @@ tags: [linux, vs code, zsh, bash, python]
 ---
 # 
 
+Imagine this: You've developed a brilliant Python proof of concept. It works perfectly until you present it to a larger audience. Suddenly, your once flawless code can't keep up with the demand, and your reputation takes a hit.
+
+Sounds familiar? Don't worry, there's a solution. 🎧 Eric Riddoch course, Taking Python to Production: A Professional Onboarding Guide, equips you with the tools to transition from coder to software engineer. I've completed this course and it's a game-changer. 
+
 In the world of Python development, following best practices, tools, and workflows is essential for efficient and effective coding. Whether you're a beginner or an experienced developer, this guide will help you navigate through various aspects of Python development.
 
 ## Table of Contents
@@ -21,6 +25,10 @@ In the world of Python development, following best practices, tools, and workflo
   - [Version Control with Git](#version-control-with-git)
   - [Creating Virtual Environments](#creating-virtual-environments)
   - [Package Building in Python](#package-building-in-python)
+  - [Software Testing](#software-testing)
+  - [CI/CD](#cicd)
+  - [Book to read around DevOps](#book-to-read-around-devops)
+  - [Template repo to get started](#template-repo-to-get-started)
 
 ## Understanding Semantic Versioning
 
@@ -94,19 +102,23 @@ There are situations where you need to work with different Python versions on th
 
 Enhance your Python development experience in VS Code with these useful extensions:
 
-1. Markdown All in One
-2. Python
-3. Pylance
-4. Gitlens
-5. Pylint
-6. Black formatter
-7. Flake8
-8. Isort (to sort imports)
-9. Mypy (for type hinting)
-10. Error Lens
-11. Darker (for code reformatting)
-12. YAML
-13. Path intellecence 
+		a. Markdown All in One
+		b. Python
+		c. Pylance
+		d. Gitlens
+		e. Pylint
+		f. Black formatter
+		g. Isort - sorts the imports
+		h. Mypy - checks for type hintings
+		i. Error Lens
+		j. YAML
+		k. Path intellecence 
+		l. Even better toml
+	2. Optional
+		a. Flake8
+		b. Darker - apply reformatting with some relaxing/ incremental adoption
+		c. Makefile Tools
+ 
 
 These extensions can significantly improve your code quality and development productivity.
 
@@ -175,8 +187,27 @@ Here are the corrected and cleaner instructions for managing Python packages:
 
 5. Consider optional dependencies, such as linting tools, that do not need to be shipped with your package. For example, tools like Ruff and mypy can be marked as optional dependencies. Install them with `pip install ".[dev]"`.
 
+**Document bash/sh/shell commands**
+- Use Taskfile by adriancooney
+- install build, dev and all to make easy to run file
+
 ---
 
+## Software Testing
+- Study software testing, test driven approach is better for sustainable package
+
+## CI/CD
+- CI/CD is important to be production ready from start
+- tools GithubActions, Gitlab, Argo etc.
+
+## Book to read around DevOps
+- The Phoenix Project: A Novel about It, Devops, and Helping Your Business Win
+- The Unicorn Project: A Novel about Developers, Digital Disruption, and Thriving in the Age of Data
+
+## Template repo to get started
+ - [Start template](https://github.com/SDcodehub/python-course-cookiecutter-v2/)
+
+---
 By following these tips and best practices, you can enhance your Python development workflow, write cleaner code, and manage your projects more efficiently. Stay updated with the latest Python versions, tools, and best practices to be a more effective Python developer.
 
 For more in-depth information on the topics covered in this blog post, you can explore the provided links and resources:
@@ -189,5 +220,6 @@ For more in-depth information on the topics covered in this blog post, you can e
 - [Creating Virtual Environments](#creating-virtual-environments)
 - [Package Building in Python](#package-building-in-python)
 - [Taking Python to Production: A Professional Onboarding Guide](https://www.udemy.com/course/setting-up-the-linux-terminal-for-software-development)
+- [Taskfile by adriancooney](https://github.com/adriancooney/Taskfile/blob/master/Taskfile.template)
 
 Happy coding!
