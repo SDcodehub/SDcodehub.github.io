@@ -4,7 +4,7 @@ title: Python Production
 date: 2023-11-01
 author: Sagar Desai
 categories: [Python, production]
-tags: [linux, vs code, zsh, bash, python]
+tags: [linux, vs code, zsh, bash]
 ---
 # 
 
