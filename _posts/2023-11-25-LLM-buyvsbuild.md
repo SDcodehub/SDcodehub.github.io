@@ -1,0 +1,34 @@
+---
+layout: post
+title: LLM buy vs build
+date: 2023-11-01
+author: Sagar Desai
+categories: [LLM, production]
+tags: [prod]
+---
+# 
+
+## Table of Contents
+- [](#)
+  - [Table of Contents](#table-of-contents)
+- [WHEN TO USE AN LLM](#when-to-use-an-llm)
+    - [Use them for:](#use-them-for)
+    - [Avoid using them for:](#avoid-using-them-for)
+
+
+# WHEN TO USE AN LLM
+
+### Use them for:
+  - Generating content
+  - Question and answering services
+  - ChatBots and AI assistants
+  - Diffusion (txt2img, txt23d, txt2vid, etc.)
+  - Talk-to-your-data applications
+  - Anything that involves communication
+
+### Avoid using them for:
+- Latency-sensitive workloads
+- Simple projects
+- Problems we don’t solve with words but with math or algorithm - forecasting, outlier prediction, calculus, etc.
+- Critical evaluations
+- High-risk projects
