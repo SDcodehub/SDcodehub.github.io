@@ -14,6 +14,7 @@ tags: [prod]
 - [WHEN TO USE AN LLM](#when-to-use-an-llm)
     - [Use them for:](#use-them-for)
     - [Avoid using them for:](#avoid-using-them-for)
+- [Buying VS Building](#buying-vs-building)
 
 
 # WHEN TO USE AN LLM
@@ -32,3 +33,17 @@ tags: [prod]
 - Problems we don’t solve with words but with math or algorithm - forecasting, outlier prediction, calculus, etc.
 - Critical evaluations
 - High-risk projects
+
+
+# Buying VS Building
+- Control
+- Competitive edge
+- Integrate anywhere
+- Costs
+- Security and privacy
+
+
+
+----
+References - 
+1. [LLMs in Production](https://www.manning.com/books/llms-in-production)
