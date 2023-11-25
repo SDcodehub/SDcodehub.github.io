@@ -8,6 +8,10 @@ tags: [linux, vs code, zsh, bash, python]
 ---
 # 
 
+Imagine this: You've developed a brilliant Python proof of concept. It works perfectly until you present it to a larger audience. Suddenly, your once flawless code can't keep up with the demand, and your reputation takes a hit.
+
+Sounds familiar? Don't worry, there's a solution. 🎧 Eric Riddoch course, Taking Python to Production: A Professional Onboarding Guide, equips you with the tools to transition from coder to software engineer. I've completed this course and it's a game-changer. 
+
 In the world of Python development, following best practices, tools, and workflows is essential for efficient and effective coding. Whether you're a beginner or an experienced developer, this guide will help you navigate through various aspects of Python development.
 
 ## Table of Contents
@@ -21,6 +25,10 @@ In the world of Python development, following best practices, tools, and workflo
   - [Version Control with Git](#version-control-with-git)
   - [Creating Virtual Environments](#creating-virtual-environments)
   - [Package Building in Python](#package-building-in-python)
+  - [Software Testing](#software-testing)
+  - [CI/CD](#cicd)
+  - [Book to read around DevOps](#book-to-read-around-devops)
+  - [Template repo to get started](#template-repo-to-get-started)
 
 ## Understanding Semantic Versioning
 
@@ -185,6 +193,21 @@ Here are the corrected and cleaner instructions for managing Python packages:
 
 ---
 
+## Software Testing
+- Study software testing, test driven approach is better for sustainable package
+
+## CI/CD
+- CI/CD is important to be production ready from start
+- tools GithubActions, Gitlab, Argo etc.
+
+## Book to read around DevOps
+- The Phoenix Project: A Novel about It, Devops, and Helping Your Business Win
+- The Unicorn Project: A Novel about Developers, Digital Disruption, and Thriving in the Age of Data
+
+## Template repo to get started
+ - [Start template](https://github.com/SDcodehub/python-course-cookiecutter-v2/)
+
+---
 By following these tips and best practices, you can enhance your Python development workflow, write cleaner code, and manage your projects more efficiently. Stay updated with the latest Python versions, tools, and best practices to be a more effective Python developer.
 
 For more in-depth information on the topics covered in this blog post, you can explore the provided links and resources:
