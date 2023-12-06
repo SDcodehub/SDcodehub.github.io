@@ -6,11 +6,8 @@ author: Sagar Desai
 categories: [LLM, production]
 tags: [prod]
 ---
-# 
 
 ## Table of Contents
-- [](#)
-  - [Table of Contents](#table-of-contents)
 - [WHEN TO USE AN LLM](#when-to-use-an-llm)
     - [Use them for:](#use-them-for)
     - [Avoid using them for:](#avoid-using-them-for)
