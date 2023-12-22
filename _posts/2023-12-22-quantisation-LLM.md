@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Quantisation LLM
-date: 2023-11-01
+date: 2023-12-22
 author: Sagar Desai
 categories: [LLM]
 tags: [prod]
