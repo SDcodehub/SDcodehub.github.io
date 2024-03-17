@@ -9,13 +9,16 @@ tags: [prod]
 
 ## Table of Contents
 - [Table of Contents](#table-of-contents)
+- [](#)
 - [Python Code](#python-code)
 - [MultiHeadAttention Class Definition](#multiheadattention-class-definition)
   - [Forward Method](#forward-method)
 - [Reference](#reference)
 
 
-![Multi Head Attention](o\assets_files\blogs\2024-03-17-Attention-Mechanism\Multi_head_attention.PNG)
+---
+![Multihead Attention Mechanism](\assets_files\blogs\2024-03-17-Attention-Mechanism\Multi_head_attention.png)
+---
 
 ## Python Code
 ```python
