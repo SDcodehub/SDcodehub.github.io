@@ -1,0 +1,17 @@
+.copy-button {
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding: 5px 10px;
+    margin: 5px;
+    cursor: pointer;
+    border: none;
+    background-color: #007bff;
+    color: white;
+    border-radius: 3px;
+    font-size: 0.8em;
+}
+
+pre {
+    position: relative;
+}
