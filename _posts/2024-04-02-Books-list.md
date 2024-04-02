@@ -3,8 +3,8 @@ layout: post
 title: Books List
 date: 2024-03-25
 author: Sagar Desai
-categories: [LLM]
-tags: [prod]
+categories: [Books]
+tags: [Reading]
 ---
 
 General Good Books
