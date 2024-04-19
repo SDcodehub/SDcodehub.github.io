@@ -18,15 +18,14 @@ General Good Books
   8. Selected Short Stories of Rabindranath Tagore
   9. The Phoenix Project
   10. The Unicorn Project
-  11. Influence
-  12. Atomic habits
-  13. Thinking fast and slow
-    a. In progress
-
-
-To read
-  1. How to Win Friends and Influence people
-
+  11. 2024
+      1.  Influence
+      2.  Atomic habits
+      3.  The Four Agreements: A Practical Guide to Personal Freedom
+      4.  Thinking fast and slow
+        a. In progress
+      5.  How to Win Friends and Influence people
+        a. In progress 
 
 
 Tech books
