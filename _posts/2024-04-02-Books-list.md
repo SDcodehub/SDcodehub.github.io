@@ -27,9 +27,8 @@ General Good Books
       2.  Atomic habits
       3.  The Four Agreements: A Practical Guide to Personal Freedom
       4.  Thinking fast and slow
-        a. In progress
-      5.  How to Win Friends and Influence people
-        a. In progress 
+        a. paused
+      5. How to Win Friends and Influence people
 
 
 Tech books
