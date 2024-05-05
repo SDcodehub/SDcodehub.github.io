@@ -114,6 +114,13 @@ Enhance your Python development experience in VS Code with these useful extensio
 		j. YAML
 		k. Path intellecence 
 		l. Even better toml
+    m. Remote SSH
+		n. WSL
+		o. Night Owl - sarah.dranser
+		p. Docker
+		q. Kubernetes
+		r. Find it fast
+		s. Dev Container
 	2. Optional
 		a. Flake8
 		b. Darker - apply reformatting with some relaxing/ incremental adoption
