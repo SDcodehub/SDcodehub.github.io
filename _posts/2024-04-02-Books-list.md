@@ -29,6 +29,11 @@ General Good Books
       4.  Thinking fast and slow
         a. paused
       5. How to Win Friends and Influence people
+			6. The Subtle Art of Not Giving F*ck
+				a. in progress
+			7. The Psychology of Money
+			8. Think and Grow Rich
+				a. in progress
 
 
 Tech books
