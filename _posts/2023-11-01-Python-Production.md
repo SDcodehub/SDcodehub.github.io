@@ -121,6 +121,12 @@ Enhance your Python development experience in VS Code with these useful extensio
 		q. Kubernetes
 		r. Find it fast
 		s. Dev Container
+		t. code runner
+		u. excel viewer
+		v. todo
+    w. drawio
+    x. polacode-2022
+    y. spell checker
 	2. Optional
 		a. Flake8
 		b. Darker - apply reformatting with some relaxing/ incremental adoption
