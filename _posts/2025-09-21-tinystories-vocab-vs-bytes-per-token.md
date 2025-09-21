@@ -58,7 +58,7 @@ Formula: `bytes_per_token = total_utf8_bytes / total_tokens`
 #### Code reference
 
 - Repository: [SDcodehub/assignment1-basics](https://github.com/SDcodehub/assignment1-basics)
-- Script: [cs336_basics/compute_bytes_per_token.py](https://github.com/SDcodehub/assignment1-basics/blob/main/cs336_basics/compute_bytes_per_token.py)
+- Script: [cs336_basics/compute_bytes_per_token.py](https://github.com/SDcodehub/assignment1-basics/blob/main/cs336_basics/scripts/compute_bytes_per_token.py)
 
 ---
 
