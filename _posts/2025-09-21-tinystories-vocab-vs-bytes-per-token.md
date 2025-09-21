@@ -7,7 +7,7 @@ categories: [LLM, Tokenization]
 tags: [BPE, Tokenizer, TinyStories]
 ---
 
-## TL;DR
+### TL;DR
 
 - **Observation:** On TinyStories, 10K and 32K tokenizers produce almost identical compression (bytes/token).
 - **Why:** The corpus is simple and repetitive; a 10K vocab already captures common subwords, so the extra 22K tokens rarely trigger.
@@ -15,7 +15,7 @@ tags: [BPE, Tokenizer, TinyStories]
 
 ---
 
-## At a glance: TinyStories results
+### At a glance: TinyStories results
 
 | Tokenizer | Vocab size | Bytes/token | Sample |
 | --- | --- | --- | --- |
@@ -27,14 +27,15 @@ All are in the same ballpark; small differences arise from sampling, tokenizer v
 
 ---
 
-## Why the gap is small on TinyStories
+### Why the gap is small on TinyStories
 
 1. **Vocabulary saturation:** The lexicon is limited and repetitive. A 10K vocab already covers almost all common words/subwords ("the", "and", "play", simple names), so merges capture most compression.
 2. **Diminishing returns:** The extra 22K tokens in a 32K vocab skew toward rare/complex segments that barely occur in TinyStories, so they seldom apply.
 3. **Short, simple morphology:** Few long, rare words means fewer opportunities for single-token replacements of multi-token fragments.
+
 ---
 
-## When you will see a bigger gap
+### When you will see a bigger gap
 
 - **OpenWebText / web-scale prose:** Broader vocabulary and topics. Larger vocabs can tokenize complex words as single units (e.g., "transformer", "backpropagation", "jurisdiction").
 - **Code corpora:** Identifiers and symbols benefit from longer subword units; larger vocabs capture common stems/snippets (e.g., "get_user_id", "</div>").
@@ -44,7 +45,7 @@ Result: On complex corpora, a 32K tokenizer often yields fewer tokens for the sa
 
 ---
 
-## How bytes/token is computed
+### How bytes/token is computed
 
 - **Definition:** Average UTF-8 byte length of the raw text divided by the number of tokens produced by the tokenizer.
 - For simple English, average bytes per character ≈ 1 (ASCII), so differences mainly come from token count, not byte size.
@@ -54,41 +55,21 @@ Formula: `bytes_per_token = total_utf8_bytes / total_tokens`
 
 ---
 
-## Minimal repro
-
-```python
-import random
-
-def bytes_per_token(texts, encode):
-    total_bytes = sum(len(t.encode('utf-8')) for t in texts)
-    total_tokens = sum(len(encode(t)) for t in texts)
-    return total_bytes / total_tokens
-
-random.seed(42)
-sampled = random.sample(tinystories_docs, k=10)  # assume these are defined
-
-ten_k_bpt = bytes_per_token(sampled, encode_10k)
-thirty_two_k_bpt = bytes_per_token(sampled, encode_32k)
-print(ten_k_bpt, thirty_two_k_bpt)
-```
-
----
-
-## Code reference
+### Code reference
 
 - Repository: [SDcodehub/assignment1-basics](https://github.com/SDcodehub/assignment1-basics)
 - Script: [cs336_basics/compute_bytes_per_token.py](https://github.com/SDcodehub/assignment1-basics/blob/main/cs336_basics/compute_bytes_per_token.py)
 
 ---
 
-## Practical guidance
+### Practical guidance
 
 - If your deployment domain resembles TinyStories (simple, repetitive), a 10K vocab is often sufficient and cheaper.
 - For real-world text (OpenWebText), code, or multilingual corpora, prefer larger vocabs (e.g., 32K) for better compression.
 
 ---
 
-## Learned points from the latest run
+### Learned points from the latest run
 
 - A 5K TinyStories tokenizer measured 3.970 bytes/token, close to prior 10K/32K numbers.
 - This reinforces vocabulary saturation on TinyStories: smaller vocabs already capture frequent patterns.
