@@ -1,6 +1,6 @@
 ---
 layout: post
-title: TinyStories: 10K vs 32K Tokenizers Yield Similar Bytes per Token
+title: 10K vs 32K Tokenizers Yield Similar Bytes per Token
 date: 2025-09-21
 author: Sagar Desai
 categories: [LLM, Tokenization]
