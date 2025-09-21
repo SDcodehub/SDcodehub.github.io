@@ -19,10 +19,11 @@ tags: [BPE, Tokenizer, TinyStories]
 
 | Tokenizer | Vocab size | Bytes/token | Sample |
 | --- | --- | --- | --- |
+| BPE | 5K | 3.970 | 10 docs (seed 42) |
 | BPE | 10K | 4.058 | 10 docs (seed 42) |
 | BPE | 32K | 4.072 | 10 docs (seed 42) |
 
-These are essentially the same within sampling noise, indicating little benefit from increasing vocab on this dataset.
+All are in the same ballpark; small differences arise from sampling, tokenizer variant (5K vs 10K/32K), and dataset slice. Net: little benefit from increasing vocab on this dataset.
 
 ---
 
@@ -84,3 +85,12 @@ print(ten_k_bpt, thirty_two_k_bpt)
 
 - If your deployment domain resembles TinyStories (simple, repetitive), a 10K vocab is often sufficient and cheaper.
 - For real-world text (OpenWebText), code, or multilingual corpora, prefer larger vocabs (e.g., 32K) for better compression.
+
+---
+
+## Learned points from the latest run
+
+- A 5K TinyStories tokenizer measured 3.970 bytes/token, close to prior 10K/32K numbers.
+- This reinforces vocabulary saturation on TinyStories: smaller vocabs already capture frequent patterns.
+- Differences across 5K/10K/32K on TinyStories are modest and sensitive to sampling and tokenizer variant.
+- OpenWebText needs explicit paths; include the required flags to measure cross-domain differences.
