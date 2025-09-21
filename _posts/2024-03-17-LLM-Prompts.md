@@ -9,10 +9,9 @@ tags: [prod]
 
 ## Table of Contents
 - [Table of Contents](#table-of-contents)
-- [](#)
 - [Python Code](#python-code)
-- [MultiHeadAttention Class Definition](#multiheadattention-class-definition)
-  - [Forward Method](#forward-method)
+- [GPT-4](#gpt-4)
+  - [To explain the code snippet](#to-explain-the-code-snippet)
 - [Reference](#reference)
 
 
@@ -25,7 +24,7 @@ tags: [prod]
 ## GPT-4
 ### To explain the code snippet
 ```
-exaplin following code to me , line by line
+explain following code to me , line by line
 <code>
 ...
 </code>
