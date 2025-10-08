@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Architecting for Stability: Pre-Normalization, RMSNorm, and Mixed-Precision Training
+title: Architecting for Stability- Pre-Normalization, RMSNorm, and Mixed-Precision Training
 date: 2025-10-08
 author: Sagar Desai
 categories: [LLM, Training]
