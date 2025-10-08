@@ -15,3 +15,4 @@ Use this checklist every time you create or edit content. Keep it technical, con
 - **Tables:** Use only when they aid quick comparison (e.g., "At a glance").
 - **Images:** Place under `assets_files/blogs/<YYYY-MM-DD-slug>/` and reference with alt text.
 - **No unrelated edits:** Don’t rename or move existing files/content unless explicitly asked.
+- do not use ":" in the tiltle
