@@ -192,12 +192,3 @@ from . import functional
 from .modules import Linear, Embedding, RMSNorm, SwiGLUFFN # Add SwiGLUFFN here
 ```
 
-### \#\# Next Steps
-
-1.  **Create/update the files** with the provided code.
-2.  **Implement the test adapter** for `run_swiglu`.
-3.  **Run the tests** with `uv run pytest -k test_swiglu`.
-
-
-
-
