@@ -18,7 +18,7 @@ Think of it like this:
 * You feed the model the words "The cat sat on the" and ask it to predict the next word.
 * The model doesn't just guess one word. It outputs a probability for *every possible word* in its vocabulary (e.g., "mat": 60%, "rug": 20%, "floor": 15%, "hat": 5%).
 * The **correct** answer is "mat".
-* Cross-entropy loss looks at the probability the model assigned to the correct answer ("mat") and gives it a "penalty" score.
+* Cross-entropy loss looks at `the probability the model assigned to the correct answer ("mat") and gives it a "penalty" score.
     * **Low Loss (Good):** If the model assigned a high probability (like 60%) to "mat", the loss is low. The model was not very "surprised."
     * **High Loss (Bad):** If the model assigned a very low probability (like 0.1%) to "mat", the loss is high. The model was *very* surprised, and this high loss score tells the training process to make a big adjustment.
 
