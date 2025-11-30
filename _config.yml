@@ -67,3 +67,11 @@ collections:
   blog:
     output: true
     permalink: /blog/:title
+
+# Markdown and math configuration
+markdown: kramdown
+kramdown:
+  input: GFM
+  math_engine: mathjax
+  math_engine_opts:
+    preview: false
