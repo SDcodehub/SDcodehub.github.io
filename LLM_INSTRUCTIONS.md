@@ -6,6 +6,7 @@ Use this checklist every time you create or edit content. Keep it technical, con
 
 ## General Rules
 
+- Please make sure what ever you do is compatible with past posts, do not introduce breaking changes
 - Make minimum changes to the original content, only adapt it to the blog style
 - **Be technical, no analogies:** Avoid real-life analogies; state facts, reasons, and data.
 - **Preserve existing style:** Do not reflow/reformat unrelated lines. Keep current indentation and spacing.
