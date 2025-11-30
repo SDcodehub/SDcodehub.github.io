@@ -38,24 +38,4 @@ layout: post_new
     <a class="u-url" href="{{ page.url | relative_url }}" hidden></a>
 </article>
 
-<!-- MathJax configuration and loader -->
-<script>
-  window.MathJax = {
-    tex: {
-      inlineMath: [['$', '$'], ['\\(', '\\)']],
-      displayMath: [['$$', '$$'], ['\\[', '\\]']],
-      processEscapes: true
-    },
-    options: {
-      skipHtmlTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
-    }
-  };
-  // Prevent duplicate loading if already present
-  if (!document.getElementById('MathJax-script')) {
-    var s = document.createElement('script');
-    s.id = 'MathJax-script';
-    s.async = true;
-    s.src = 'https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js';
-    document.head.appendChild(s);
-  }
-</script>
+<!-- MathJax is loaded globally in base layout -->
