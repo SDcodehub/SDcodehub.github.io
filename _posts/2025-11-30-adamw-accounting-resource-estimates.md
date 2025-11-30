@@ -48,24 +48,25 @@ The peak memory is the sum of memory required for parameters, gradients, optimiz
      - Norms: 2 RMSNorms, each has a gain vector of size \(D\). → \(2D\).
    - **Final Layers:** Final RMSNorm (\(D\)) + Output Embedding/LM Head (\(D \times V\)).
 
-   \[
-   N_{params} \approx 2VD + TD + L(12D^2 + 2D) + D
-   \]
-   \[
-   \text{Memory}_{params} = 4 \times N_{params} \text{ bytes}
-   \]
+$$
+N_{params} \approx 2VD + TD + L(12D^2 + 2D) + D
+$$
+
+$$
+\text{Memory}_{params} = 4 \times N_{params} \text{ bytes}
+$$
 
 2. **Gradients (\(M_{grads}\))**
    We store one gradient value for every parameter.
-   \[
-   \text{Memory}_{grads} = \text{Memory}_{params}
-   \]
+$$
+\text{Memory}_{grads} = \text{Memory}_{params}
+$$
 
 3. **Optimizer State (\(M_{opt}\))**
    AdamW maintains two state tensors (\(m\) and \(v\)) for every parameter.
-   \[
-   \text{Memory}_{opt} = 2 \times \text{Memory}_{params}
-   \]
+$$
+\text{Memory}_{opt} = 2 \times \text{Memory}_{params}
+$$
 
 4. **Activations (\(M_{act}\))**
    We must store intermediate tensors from the forward pass to compute gradients during the backward pass. Based on the components listed:
@@ -82,17 +83,18 @@ The peak memory is the sum of memory required for parameters, gradients, optimiz
    - **Per Layer Sum:** Summing the distinct large tensors stored: \(16BTD + 2BHT^2\).
    - **Non-Layer:** Final Norm Input (\(BTD\)) + Logits (\(BTV\)).
 
-   \[
-   N_{act} = L(16BTD + 2BHT^2) + BTD + BTV
-   \]
-   \[
-   \text{Memory}_{act} = 4 \times N_{act} \text{ bytes}
-   \]
+$$
+N_{act} = L(16BTD + 2BHT^2) + BTD + BTV
+$$
+
+$$
+\text{Memory}_{act} = 4 \times N_{act} \text{ bytes}
+$$
 
 **Total Peak Memory:**
-\[
+$$
 \text{Total} = 4 \times (4 \cdot N_{params} + N_{act}) \text{ bytes}
-\]
+$$
 *(Note: \(4 \cdot N_{params}\) comes from Params + Grads + 2 States)*
 
 ---
@@ -124,18 +126,18 @@ number representing the maximum batch size.
 - **Memory:** \(4 \text{ bytes} \times 3.82 \times 10^9 \approx \mathbf{15.3 \text{ GB}}\).
 
 **Expression:**
-\[
+$$
 \text{Memory (GB)} \approx 15.3 \cdot \text{batch\_size} + 26.2
-\]
+$$
 
 **Maximum Batch Size:**
 We need \(15.3 \cdot B + 26.2 \le 80\).
-\[
+$$
 15.3 \cdot B \le 53.8
-\]
-\[
+$$
+$$
 B \le 3.51
-\]
+$$
 **Answer:** Maximum batch size is **3**.
 
 ---
@@ -146,9 +148,9 @@ How many FLOPs does running one step of AdamW take?
 Deliverable: An algebraic expression, with a brief justification.
 
 **Expression:**
-\[
+$$
 \approx 11 \times N_{params} \text{ FLOPs}
-\]
+$$
 
 **Justification:**
 AdamW performs element-wise operations on the parameters. For each parameter \(\theta\), the update involves:
@@ -182,12 +184,12 @@ Deliverable: The number of days training would take, with a brief justification.
   - Effective MFU (50%) = \(0.5 \times 19.5 \times 10^{12} = 9.75 \times 10^{12}\) FLOPs/s.
 
 - **Time:**
-  \[
-  \text{Time} = \frac{4.12 \times 10^{21}}{9.75 \times 10^{12}} \approx 422{,}500{,}000 \text{ seconds}
-  \]
-  \[
-  \text{Days} = \frac{4.22 \times 10^{8}}{86{,}400} \approx \mathbf{4{,}880 \text{ days}}
-  \]
+$$
+\text{Time} = \frac{4.12 \times 10^{21}}{9.75 \times 10^{12}} \approx 422{,}500{,}000 \text{ seconds}
+$$
+$$
+\text{Days} = \frac{4.22 \times 10^{8}}{86{,}400} \approx \mathbf{4{,}880 \text{ days}}
+$$
 
 **Answer:** It would take approximately **4,880 days (or ~13 years)**.
 
