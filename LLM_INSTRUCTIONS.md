@@ -15,6 +15,7 @@ LLM Authoring Checklist (short)
 - Tables only when they aid quick comparison.
 - Images: place under assets_files/blogs/<YYYY-MM-DD-slug>/ with alt text.
 - No unrelated edits/renames/moves. Do not use ':' in the title.
+- Create a images in the folder "assets_files/blogs" folder location whereever required.
 
 Math rendering best practices
 - Display math: use $$ ... $$, flush-left at column 1, with blank lines around.
