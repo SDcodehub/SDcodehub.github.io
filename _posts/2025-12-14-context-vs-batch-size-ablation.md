@@ -47,21 +47,19 @@ The architecture is a compact transformer:
 ##### Loss Convergence
 
 <!-- PLACEHOLDER: Add wandb val/loss comparison graph -->
-![Validation Loss Comparison](/assets_files/blogs/2025-12-14-context-vs-batch-ablation/val_loss.png)
+![Validation Loss Comparison](/assets_files/blogs/2025-12-14-context-vs-batch-ablation/Screenshot%2025-12-16%at%4.00.17%PM.png)
 
 The validation loss curves are nearly identical. Both runs converged smoothly to similar final loss values. At this model scale ($d_{model} = 256$), the attention mechanism neither struggles with 1024 tokens nor gains significant benefit from the extended context.
 
 ##### Perplexity
 
-<!-- PLACEHOLDER: Add wandb perplexity comparison graph -->
-![Perplexity Comparison](/assets_files/blogs/2025-12-14-context-vs-batch-ablation/perplexity.png)
+![Perplexity Comparison](/assets_files/blogs/2025-12-14-context-vs-batch-ablation/Screenshot%202025-12-16%20at%204.00.45%20PM.png)
 
 Both models learned the probability distribution at the same rate, confirming the loss equivalence.
 
 ##### System Utilization
 
-<!-- PLACEHOLDER: Add wandb system metrics graph -->
-![System Metrics](/assets_files/blogs/2025-12-14-context-vs-batch-ablation/system_metrics.png)
+![System Metrics](/assets_files/blogs/2025-12-14-context-vs-batch-ablation/Screenshot%202025-12-16%20at%204.00.32%20PM.png)
 
 The system graphs reveal the cost of longer context:
 - **Memory Usage:** ctx1024 (Red) allocated ~141 GB VRAM; ctx512 (Grey) used ~115 GB
