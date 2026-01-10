@@ -23,4 +23,6 @@ Math rendering best practices
 - Avoid \\text{} in inline math; prefer plain text or \\mathrm for short symbols.
 - Do not indent math blocks inside lists; avoid placing math in code fences.
 - Escape underscores outside math (e.g., batch\\_size) or wrap identifiers in backticks.
+- create blog on this, keep the things at abstract concept level if you want use the exact thigs from the current info, examplin the assumptions anad then use it
+- Use ASCII diagrams to explain the concept however keep the it technical and strictly adhering to the concept
 
